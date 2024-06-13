@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDMISSION FORM</title>
+
+    <style>
+        button {
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border:black;
+            cursor:pointer;
+            display:flow-root;
+            margin: 0 auto;
+            border-radius: 5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="logoo.jpg" alt="LOGO" width="200" style="margin-right: 20px;">
+                <center>
+                    <h1>Brilliance Beacon Academy</h1>
+                <h3><i>A Recognized Authority in Quality Education</i></h3>
+                </center>
+        </div>
+        <table style="border: 1px solid black; border-collapse: collapse; width: 100%; margin-top: 10px;">
+            <tr>
+                <td style="border: 1px solid white; background-color: aqua; padding: 10px; text-align: center;">
+                    <a href="index.html">Back to Home</a>
+                </td>
+                <td style="border: 1px solid white; background-color: aqua; padding: 10px; text-align: center;">
+                    <a href="about.html">About us</a>
+                </td>
+                <td style="border: 1px solid white; background-color: aqua; padding: 10px; text-align: center;">
+                    <a href="contact.html">Contact us</a>
+                </td>
+                <td style="border: 1px solid white; background-color: aqua; padding: 10px; text-align: center;">
+                    <a href="fee.html">Fees Structure</a>
+                </td>
+                <td style="border: 1px solid white; background-color: aqua; padding: 10px; text-align: center;">
+                    Admission
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <fieldset>
+            <legend><h1>Why Apply???</h1></legend>
+            <p>We invite you to complete this form to seize the opportunity of gaining admission to our prestigious new educational project. Your participation will be the first step toward joining a community dedicated to excellence in education.</p>
+        </fieldset>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h2><b>Personal Information</b></h2></legend>
+                <label for="first_name">First Name *</label><br>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required pattern="[A-Za-z]+" title="Please enter alphabetic characters only"><br><br>
+    
+                <label for="last_name">Last Name</label><br>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter your last name"><br><br>
+    
+                <label for="so_do">S/O, D/O *</label><br>
+                <input type="text" id="so_do" name="so_do" placeholder="Enter father's or mother's name" required><br><br>
+    
+                <label for="nic">Student's NIC (Father's NIC)</label><br>
+                <input type="number" id="nic" name="nic" placeholder="Enter NIC number" title="Enter a Valid CNIC only in Numeric Format" required><br><br>
+    
+                <label for="dob">Date of Birth *</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="class">Applying For Which Class *</label><br>
+                <input type="text" id="class" name="class" placeholder="IX/X/XI/XII" required><br><br>
+    
+                <label for="picture">Suitable Picture *</label><br>
+                <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+            </fieldset>
+    
+            <fieldset>
+                <legend><h2><b>Contact Information</b></h2></legend>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+
+                <label for="ph">Contact Number</label><br>
+                <input type="number" id="ph" name="ph" pattern="\d{4}-\d{7}" placeholder="0345-XXXXXXX" required ><br><br>
+
+                <label for="ph2">Contact Number(In Case of Emergency)</label><br>
+                <input type="number" id="ph" name="ph" pattern="\d{4}-\d{7}" placeholder="0345-XXXXXXX" required ><br><br>
+    
+            </fieldset>
+            <fieldset>
+                <legend><h2><b>Other Information</b></h2></legend>
+                <label for="prev_institute">Name of Previous Institute</label><br>
+                <input type="text" id="prev_institute" name="prev_institute" placeholder="Enter name of previous institute"><br><br>
+    
+                <label for="qualification">Qualification</label><br>
+                <input type="text" id="qualification" name="qualification" placeholder="Enter your qualification"><br><br>
+            </fieldset>
+            <button>
+                Apply
+            </button>
+        </form>
+    </main>
+    <footer style="text-align:center">
+        <p>Copyright &copy; 2024</p>
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+</html>
